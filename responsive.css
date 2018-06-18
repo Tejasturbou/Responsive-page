@@ -1,0 +1,89 @@
+
+a.hamburger_icon {
+  	float: right;
+  	width: 7vw;
+  	height: 4vh;
+  	margin: 25px 13px 3px 8px;
+  /*	vertical-align: bottom;*/
+}
+
+nav {
+	display: none;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hero, .top-news, .scores, .weather, .recent-news {
+  order: 10;
+}
+
+footer {
+	text-align: center;
+}
+
+@media screen and (max-width: 533px) {
+	.header__logo {
+		height: 13vw;
+		margin: 10px -3px 7px 8px;
+		max-height: 72px;
+	}
+	.header__title {
+		font-size: 7.6vw;
+		margin: 22px 0px 0px 8px;
+	}
+	footer > ul > li {
+		font-size: 2.491vw;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+}
+
+@media screen and (min-width: 534px) {
+	a.hamburger_icon {
+		display: none;
+	}
+	nav {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 550px) {
+	.hero {
+		order: 0;
+		width: 60%;
+	}
+	.weather {
+		order: 1;
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	.hero {
+		order: 0;
+		width: 50%;
+	}
+	.top-news {
+		order: 1;
+		width: 50%;
+	}
+	.scores {
+		order: 2;
+		width: 59%;
+	}
+	.weather {
+		order: 3;
+		width: 41%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+  .header__inner, .nav, main {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
