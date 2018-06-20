@@ -20,6 +20,14 @@ nav {
   order: 10;
 }
 
+.header {
+	position: sticky;
+	top: 0;
+	background: white;
+	overflow-y: auto;
+	z-index: 1000;
+}
+
 footer {
 	text-align: center;
 }
@@ -36,10 +44,25 @@ footer {
 	}
 	footer > ul > li {
 		font-size: 2.491vw;
-		padding-top: 2px;
-		padding-bottom: 2px;
 	}
-}
+	.nav__list {
+    	margin: 0;
+    	padding: 0;
+    	width: 40%;
+    	background-color: #f1f1f1;
+    	position: fixed;
+    	height: 100%;
+    	overflow: auto;
+    	z-index: 10;
+  	}
+  	.nav__item {
+  		width: 100%;
+  		display: block;
+  	}
+  	.nav__item:hover {
+  		background: green;
+  	}
+ }
 
 @media screen and (min-width: 534px) {
 	a.hamburger_icon {
@@ -81,7 +104,7 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
-  .header__inner, .nav, main {
+  .header__inner, .nav, main, .content {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
